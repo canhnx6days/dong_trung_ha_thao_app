@@ -1,7 +1,5 @@
 import 'dart:convert';
-
 import 'package:http/http.dart' as http;
-
 import 'models/user.dart';
 
 class ApiService {
@@ -10,9 +8,11 @@ class ApiService {
   }
 
   static Future<List<User>> getUsers({int nrUsers = 1}) async {
+    Uri nrUsersUri = Uri.parse(url(nrUsers));
     try {
       var response =
-          await http.get(url(nrUsers), headers: {"Content-Type": "application/json"});
+          // await http.get(url(nrUsers), headers: {"Content-Type": "application/json"});
+          await http.get(nrUsersUri, headers: {"Content-Type": "application/json"});
 
       if(response.statusCode == 200){
         Map data = json.decode(response.body);

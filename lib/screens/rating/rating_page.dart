@@ -27,11 +27,12 @@ class _RatingPageState extends State<RatingPage> {
               icon: Image.asset('assets/icons/comment.png'),
               onPressed: () {
                 showDialog(
-                    context: context,
-                    child: Dialog(
+                  context: context,
+                  builder: (BuildContext context) => Dialog(
                       shape: BeveledRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(10))),
                       child: RatingDialog(),
-                    ));
+                    ),
+                );
               },
               color: Colors.black,
             ),
