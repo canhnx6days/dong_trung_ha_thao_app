@@ -112,7 +112,7 @@ class _MainPageState extends State<MainPage>
                 child: Text(
                   timelines[0],
                   style: TextStyle(
-                      fontSize: timelines[0] == selectedTimeline ? 20 : 14,
+                      fontSize: (timelines[0] == selectedTimeline ? 20 : 14),
                       fontWeight: timelines[0] == selectedTimeline
                           ? FontWeight.w600
                           : FontWeight.normal, //Canhadd

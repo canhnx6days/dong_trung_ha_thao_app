@@ -70,7 +70,7 @@ packages:
       name: country_code_picker
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.7.0"
+    version: "2.0.2"
   crypto:
     dependency: transitive
     description:
@@ -84,7 +84,7 @@ packages:
       name: cupertino_icons
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.1.3"
+    version: "1.0.3"
   fake_async:
     dependency: transitive
     description:
@@ -92,34 +92,27 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.2.0"
-  flare_dart:
-    dependency: transitive
-    description:
-      name: flare_dart
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.3.4"
   flare_flutter:
     dependency: transitive
     description:
       name: flare_flutter
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.6"
+    version: "3.0.1"
   flare_loading:
     dependency: transitive
     description:
       name: flare_loading
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.1.2"
+    version: "3.0.0"
   flare_splash_screen:
     dependency: "direct main"
     description:
       name: flare_splash_screen
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.1.4"
+    version: "4.0.0"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -145,14 +138,14 @@ packages:
       name: flutter_rating_bar
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.3.0+1"
+    version: "4.0.0"
   flutter_staggered_grid_view:
     dependency: "direct main"
     description:
       name: flutter_staggered_grid_view
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.3.4"
+    version: "0.4.0"
   flutter_svg:
     dependency: "direct main"
     description:
@@ -234,14 +227,14 @@ packages:
       name: modal_bottom_sheet
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.0+1"
+    version: "2.0.0"
   numberpicker:
     dependency: "direct main"
     description:
       name: numberpicker
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.3.0"
+    version: "2.1.1"
   path:
     dependency: transitive
     description:
@@ -269,7 +262,7 @@ packages:
       name: pedantic
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.11.0"
+    version: "1.11.1"
   petitparser:
     dependency: transitive
     description:
@@ -352,6 +345,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.3.0"
+  universal_platform:
+    dependency: transitive
+    description:
+      name: universal_platform
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0+1"
   vector_math:
     dependency: transitive
     description:

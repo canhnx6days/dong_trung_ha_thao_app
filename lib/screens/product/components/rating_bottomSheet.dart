@@ -61,7 +61,7 @@ class _RatingBottomSheetState extends State<RatingBottomSheet> {
                 ),
                 Column(
                   children: <Widget>[
-                    FlutterRatingBar(
+                    RatingBar(
 //                      borderColor: Color(0xffFF8993),
 //                      fillColor: Color(0xffFF8993),
                       ignoreGestures: true,
@@ -69,13 +69,15 @@ class _RatingBottomSheetState extends State<RatingBottomSheet> {
                       allowHalfRating: true,
                       initialRating: 1,
                       itemPadding: EdgeInsets.symmetric(horizontal: 4.0),
-                      fullRatingWidget: Icon(
+                      ratingWidget: RatingWidget(
+                        full: Icon(
                         Icons.favorite,
                         color: Color(0xffFF8993),
-                        size: 20,
+    size: 20,
+    ),
+                        empty: Icon(Icons.favorite_border,
+                            color: Color(0xffFF8993), size: 20),
                       ),
-                      noRatingWidget: Icon(Icons.favorite_border,
-                          color: Color(0xffFF8993), size: 20),
                       onRatingUpdate: (value) {
                         setState(() {
                           rating = value;
@@ -141,7 +143,7 @@ class _RatingBottomSheetState extends State<RatingBottomSheet> {
                                 Padding(
                                   padding:
                                       const EdgeInsets.symmetric(vertical: 8.0),
-                                  child: FlutterRatingBar(
+                                  child: RatingBar(
 //                                borderColor: Color(0xffFF8993),
 //                                fillColor: Color(0xffFF8993),
                                     ignoreGestures: true,
@@ -150,13 +152,16 @@ class _RatingBottomSheetState extends State<RatingBottomSheet> {
                                     initialRating: val.toDouble(),
                                     itemPadding:
                                         EdgeInsets.symmetric(horizontal: 4.0),
-                                    fullRatingWidget: Icon(
-                                      Icons.favorite,
-                                      color: Color(0xffFF8993),
-                                      size: 14,
+                                    ratingWidget: RatingWidget(
+                                      full: Icon(
+                                        Icons.favorite,
+                                        color: Color(0xffFF8993),
+                                        size: 14,
+                                      ),
+                                      empty: Icon(Icons.favorite_border,
+                                          color: Color(0xffFF8993), size: 14),
                                     ),
-                                    noRatingWidget: Icon(Icons.favorite_border,
-                                        color: Color(0xffFF8993), size: 14),
+
                                     onRatingUpdate: (value) {
                                       setState(() {
                                         rating = value;

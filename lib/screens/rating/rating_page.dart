@@ -29,9 +29,10 @@ class _RatingPageState extends State<RatingPage> {
                 showDialog(
                   context: context,
                   builder: (BuildContext context) => Dialog(
-                      shape: BeveledRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(10))),
-                      child: RatingDialog(),
-                    ),
+                    shape: BeveledRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10))),
+                    child: RatingDialog(),
+                  ),
                 );
               },
               color: Colors.black,
@@ -57,10 +58,11 @@ class _RatingPageState extends State<RatingPage> {
                                 color: yellow,
                                 shape: BoxShape.circle,
                                 boxShadow: shadow,
-                                border:
-                                    Border.all(width: 8.0, color: Colors.white)),
+                                border: Border.all(
+                                    width: 8.0, color: Colors.white)),
                             // child: Image.asset('assets/headphones.png'),
-                            child: Image.asset('assets/dtht_tuoi_transparent.png'),
+                            child:
+                                Image.asset('assets/dtht_tuoi_transparent.png'),
                           ),
                           Padding(
                             padding: const EdgeInsets.symmetric(
@@ -88,7 +90,7 @@ class _RatingPageState extends State<RatingPage> {
                             ),
                             Column(
                               children: <Widget>[
-                                FlutterRatingBar(
+                                RatingBar(
 //                      borderColor: Color(0xffFF8993),
 //                      fillColor: Color(0xffFF8993),
                                   ignoreGestures: true,
@@ -97,13 +99,15 @@ class _RatingPageState extends State<RatingPage> {
                                   initialRating: 1,
                                   itemPadding:
                                       EdgeInsets.symmetric(horizontal: 4.0),
-                                  fullRatingWidget: Icon(
-                                    Icons.favorite,
-                                    color: Color(0xffFF8993),
-                                    size: 20,
+                                  ratingWidget: RatingWidget(
+                                    full: Icon(
+                                      Icons.favorite,
+                                      color: Color(0xffFF8993),
+                                      size: 20,
+                                    ),
+                                    empty: Icon(Icons.favorite_border,
+                                        color: Color(0xffFF8993), size: 20),
                                   ),
-                                  noRatingWidget: Icon(Icons.favorite_border,
-                                      color: Color(0xffFF8993), size: 20),
                                   onRatingUpdate: (value) {
                                     setState(() {
                                       rating = value;
@@ -136,18 +140,19 @@ class _RatingPageState extends State<RatingPage> {
                                   padding: const EdgeInsets.all(8.0),
                                   decoration: BoxDecoration(
                                       color: Colors.white,
-                                      borderRadius:
-                                          BorderRadius.all(Radius.circular(5.0))),
+                                      borderRadius: BorderRadius.all(
+                                          Radius.circular(5.0))),
                                   child: Row(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: <Widget>[
                                       Padding(
                                         padding:
                                             const EdgeInsets.only(right: 16.0),
                                         child: CircleAvatar(
                                           maxRadius: 14,
-                                          backgroundImage:
-                                              AssetImage('assets/background.jpg'),
+                                          backgroundImage: AssetImage(
+                                              'assets/background.jpg'),
                                         ),
                                       ),
                                       Expanded(
@@ -158,7 +163,8 @@ class _RatingPageState extends State<RatingPage> {
                                           children: <Widget>[
                                             Row(
                                               mainAxisAlignment:
-                                                  MainAxisAlignment.spaceBetween,
+                                                  MainAxisAlignment
+                                                      .spaceBetween,
                                               children: <Widget>[
                                                 Text(
                                                   'Billy Holand',
@@ -175,26 +181,30 @@ class _RatingPageState extends State<RatingPage> {
                                               ],
                                             ),
                                             Padding(
-                                              padding: const EdgeInsets.symmetric(
-                                                  vertical: 8.0),
-                                              child: FlutterRatingBar(
+                                              padding:
+                                                  const EdgeInsets.symmetric(
+                                                      vertical: 8.0),
+                                              child: RatingBar(
 //                                borderColor: Color(0xffFF8993),
 //                                fillColor: Color(0xffFF8993),
                                                 ignoreGestures: true,
                                                 itemSize: 20,
                                                 allowHalfRating: true,
                                                 initialRating: val.toDouble(),
-                                                itemPadding: EdgeInsets.symmetric(
-                                                    horizontal: 4.0),
-                                                fullRatingWidget: Icon(
-                                                  Icons.favorite,
-                                                  color: Color(0xffFF8993),
-                                                  size: 14,
-                                                ),
-                                                noRatingWidget: Icon(
-                                                    Icons.favorite_border,
+                                                itemPadding:
+                                                    EdgeInsets.symmetric(
+                                                        horizontal: 4.0),
+                                                ratingWidget: RatingWidget(
+                                                  full: Icon(
+                                                    Icons.favorite,
                                                     color: Color(0xffFF8993),
-                                                    size: 14),
+                                                    size: 14,
+                                                  ),
+                                                  empty: Icon(
+                                                      Icons.favorite_border,
+                                                      color: Color(0xffFF8993),
+                                                      size: 14),
+                                                ),
                                                 onRatingUpdate: (value) {
                                                   setState(() {
                                                     rating = value;
@@ -210,8 +220,9 @@ class _RatingPageState extends State<RatingPage> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsets.symmetric(
-                                                  vertical: 16.0),
+                                              padding:
+                                                  const EdgeInsets.symmetric(
+                                                      vertical: 16.0),
                                               child: Row(
                                                 mainAxisAlignment:
                                                     MainAxisAlignment
