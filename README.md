@@ -1,3 +1,6 @@
+
+<img src="assets/promotional/screen_mockup.png" alt="mockup-intro" />
+
 I have customized the e-commerce app:
 <ul>
 	<li>Vietnameseize the application by changing the display text to suit Vietnamese; adjust the price format in VND</li>
@@ -6,6 +9,5 @@ I have customized the e-commerce app:
 	<li>In the Shopping Cart screen, change the display of the Total Payment information and Buy Button</li>
 </ul>
 <a></a>
-<img src="assets/promotional/screen_mockup.png" alt="mockup-intro" />
 
 Original source: <a href="https://github.com/robertodevs/flutter_ecommerce_template">https://github.com/robertodevs/flutter_ecommerce_template</a>
